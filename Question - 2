@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class Question2 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please Enter the number of Eggs you have : ");
+		int n = sc.nextInt();
+		sc.close();
+		int m=0;
+		m = n / 144;
+		System.out.println("Number of Grosses : " + m);
+		n = n % 144;
+		m = n / 12;
+		System.out.println("Number of drozens : " + m);
+		n = n % 12;
+		System.out.println("Number of eggs that user have now : "+ n);
+	}
+}
